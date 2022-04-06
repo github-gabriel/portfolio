@@ -22,12 +22,11 @@ function toggleButton(event){
 
 function onLoadFunctions(){
     document.getElementById("codeBtn").focus();
+    document.getElementById("codeBtn").classList.add('focused');
 }
 window.onload = onLoadFunctions;
 
 function openCode() {
-
-    document.getElementById("codeBtn").focus();
 
     // Declare all variables
     var i, tabcontent, tablinks;
@@ -51,7 +50,8 @@ function openCode() {
 
 function openConsole() {
 
-    document.getElementById("consoleBtn").focus();
+    document.getElementById("codeBtn").classList.remove('focused');
+    document.getElementById("consoleBtn").classList.add('focused');
 
     // Declare all variables
     var i, tabcontent, tablinks;
