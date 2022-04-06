@@ -1,0 +1,166 @@
+header h1{
+    display: flex;
+    font-family: 'Arial';
+    font-weight: 700;
+    justify-content: center;
+    font-size: 60px;
+}
+
+#portfolioUntertitel{
+    display: flex;
+    font-family: 'Consolas';
+    justify-content: center;
+    font-size: 30px;
+}
+
+.container{
+    background-color: #1C1B1B;
+    position: absolute;
+    border-radius: 25px;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    text-align: center;
+    width : 750px;   
+}
+
+.runButton{
+    display: inline-flex;
+    height: 40px;
+    padding: 0;
+    background-color: rgb(44, 156, 0);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    overflow: hidden;
+    font: 'Arial', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.runButton:hover{
+    background-color: rgb(40, 139, 0);
+}
+
+.runButton:active{
+    background-color: rgb(40, 139, 0);
+}
+
+.button__text,
+.button__icon{
+    font-size: 24px;
+    display: inline-flex;
+    align-items: center;
+    padding: 0 24px;
+    color: #fff;
+    height: 100%;
+}
+
+.button__text{
+    width: 30px;
+}
+
+.button__icon{
+    width: 30px;
+    font-size: 5em;
+    background: rgba(0,0,0,0.08);
+}
+
+#ueberschrift{
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-decoration-skip: spaces;		/** Safari **/
+    text-decoration-skip-ink: spaces;
+    font-weight: 1000;
+    font-size: 26px;
+    color: rgb(255, 255, 255);
+    
+}
+
+.text{
+    font-size:20px;
+    color: rgb(255, 255, 255);
+}
+
+#link{
+    color: #aaaaaa;
+}
+
+.icons{
+    color: #aaaaaa;
+    top: 115%;
+    padding: 0 8px;
+    transition: color 0.2s;
+    text-decoration: none;
+    font-size: 4em;
+}
+
+.icons:hover{
+    color: #333333;
+}
+
+.social-profiles{
+    height: 125vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+body {
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow-y: hidden; 
+}
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 3px solid #1C1B1B;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    background-color: #f1f1f1;
+}
+  
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    font-weight: 700;
+    font-size: 26px;
+    font-family: 'Consolas';
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 18px;
+    transition: 0.3s;
+}
+
+.tab button:focus {
+    background-color: rgb(197, 197, 197);
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: rgb(197, 197, 197);
+}
+  
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: rgb(197, 197, 197);
+}
+  
+/* Style the tab content */
+.tabcontent {
+    height: 420px;
+    font-size: 22px;
+    border: 3px solid #1C1B1B;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px ;
+    font-family: Consolas;
+    text-align: left;
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+}
