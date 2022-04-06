@@ -94,6 +94,10 @@ body{
     color: #aaa;
 }
 
+.focused{
+    background-color: rgb(197, 197, 197);
+}
+
 .icons{
     color: #1C1B1B;
     top: 115%;
@@ -135,7 +139,6 @@ body {
     font-weight: 700;
     font-size: 26px;
     font-family: 'Consolas';
-    background-color: inherit;
     float: left;
     border: none;
     outline: none;
