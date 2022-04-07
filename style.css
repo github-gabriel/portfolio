@@ -40,7 +40,7 @@ body{
     outline: none;
     border-radius: 5px;
     overflow: hidden;
-    font: 'Arial', sans-serif;
+    font-family: 'Arial', sans-serif;
     font-size: 24px;
     font-weight: 500;
     cursor: pointer;
@@ -74,11 +74,9 @@ body{
     background: rgba(0,0,0,0.08);
 }
 
-#ueberschrift{
+.ueberschrift{
     text-decoration: underline;
     text-decoration-thickness: 3px;
-    text-decoration-skip: spaces;		/** Safari **/
-    text-decoration-skip-ink: spaces;
     font-weight: 1000;
     font-size: 26px;
     color: rgb(255, 255, 255);
