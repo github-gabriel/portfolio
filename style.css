@@ -20,6 +20,7 @@ body {
     font-family: 'Arial';
     font-weight: 700;
     font-size: 60px;
+    margin-bottom: 15px;
 }
 
 #portfolioUntertitel {
@@ -29,6 +30,7 @@ body {
     align-self: center;
     margin-bottom: 50px;
     font-size: 30px;
+    margin-bottom: 100px;
 }
 
 /* Container */
