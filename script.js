@@ -1,32 +1,14 @@
 // Ein Großteil des Scripts habe ich von: https://www.w3schools.com/howto/howto_js_tabs.asp
 
-document.addEventListener('DOMContentLoaded', startToggler);
- 
-function startToggler(){
-    const buttons = document.getElementsByClassName('btn');
-    Array.prototype.forEach.call(buttons, (button)=>{
-        button.addEventListener('click', toggleButton)
-    })
-}
- 
-function toggleButton(event){
-    const buttons = document.getElementsByClassName('btn');
-    const currentButton = event.currentTarget;
- 
-    Array.prototype.forEach.call(buttons, (button)=>{
-        button.classList.remove('focused')
-    })
- 
-    currentButton.classList.add('focused')
-}
-
 function onLoadFunctions(){
-    document.getElementById("codeBtn").focus();
     document.getElementById("codeBtn").classList.add('focused');
 }
 window.onload = onLoadFunctions;
 
 function openCode() {
+
+    document.getElementById("codeBtn").classList.add('focused');
+    document.getElementById("consoleBtn").classList.remove('focused');
 
     // Declare all variables
     var i, tabcontent, tablinks;

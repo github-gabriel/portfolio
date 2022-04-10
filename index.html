@@ -21,73 +21,107 @@
 </head>
 
 <body>
+
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.0/highlight.min.js"></script>
     <script>hljs.highlightAll();</script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <header>
-        <h1>Gabriel | Portfolio</h1>
-        <p id="portfolioUntertitel">Mein Portfolio in einem Code/Console-Style</p>
-    </header>
-    <div class="container">
-        <div class="tab">
-            <button id="codeBtn" class="btn" onclick="openCode()">Code</button>
-            <button id="consoleBtn" class="btn" onclick="openConsole()">Console</button>
-        </div>
-        <div id="Code" class="tabcontent" style="display: block;">
-            <pre><code class="java">public class Main{
 
-    public static void main(String[] args) {
+    <div class="flex-container">
 
-        Person gabriel = new Person();
-        System.out.println(gabriel.toString());
+        <div class="wrapper">
 
+            <!--Ueberschrift-->
+
+            <h1 id="portfolioUeberschrift">Gabriel | Portfolio</h1>
+            <p id="portfolioUntertitel">Mein Portfolio in einem Code/Console-Style</p>
+
+            <!--Ueberschrift Ende-->
+
+            <!--Container Start; Tab Buttons-->
+
+            <div class="container">
+
+                <div class="tab">
+                    <button id="codeBtn" class="tablinks" onclick="openCode()">Code</button>
+                    <button id="consoleBtn" class="tablinks" onclick="openConsole()">Console</button>
+                </div>
+
+                <!--Tab Buttons Ende-->
+
+                <!--Java Code und 'Run Code' Button-->
+
+                <div id="Code" class="tabcontent" style="display: block;">
+                    <pre><code class="java">public class Main{
+    
+        public static void main(String[] args) {
+    
+            Person gabriel = new Person();
+            System.out.println(gabriel.toString());
+    
+        }
     }
-}
-                </code><br>&nbsp;<button type="button" class="runButton" onclick="openConsole(), run()">
-                    <span class="button__text">Run</span>
-                    <span class="button__icon">
-                        <ion-icon name="caret-forward-outline"></ion-icon>
-                    </span>
-                </button></pre>
+                    </code><br>&nbsp;</pre>
+                    <button type="button" class="runBtn" onclick="openConsole(), run()">
+                        <span class="button__text">Run</span>
+                        <span class="button__icon">
+                            <ion-icon name="caret-forward-outline"></ion-icon>
+                        </span>
+                    </button>
+                </div>
+
+                <!--Java Code und 'Run Code' Button Ende-->
+
+                <!--Konsole Output-->
+
+                <div id="Console" class="tabcontent">
+                    <p>
+                        <span class="ueberschrift">About Me</span>
+                        <br><span class="text">Hallo, ich bin Gabriel. Ich bin ein Hobby Entwickler aus
+                            Deutschland. Ich arbeite überwiegend mit Java und seit
+                            kurzem auch C++. Außerdem habe ich vor kurzem angefangen etwas
+                            über Datenbanken zu lernen und habe dafür ein kleines Projekt
+                            mit Spring Boot gemacht.
+                        </span>
+                    </p>
+                    <p>
+                        <span class="ueberschrift">Projekte</span>
+                        <span class="text">
+                            <br>Alle meine Projekte sind
+                            <a id="link" href="https://github.com/gabriel-java-github" target="blank">hier</a>
+                            auffindbar.
+                            Bisher habe ich Spiele mit C#, eine Seite mit Datenbank dahinter, verschiedene Anwendungen
+                            mit Java Swing/AWT, mehrere Konsolenanwendungen, eine 3D Game Enginge mit
+                            LWJGL 2 und ein 2D Spiel mit Java AWT/Swing programmiert, sowie zwei Websiten erstellt.
+                        </span>
+                    </p>
+                </div>
+            </div>
+
+            <!--Konsole Output Ende-->
+
+            <!--Social Media Links-->
+
+            <div class="social-profiles">
+                <a class="icons" href="https://github.com/gabriel-java-github" target="blank">
+                    <ion-icon name="logo-github"></ion-icon>
+                </a>
+                <a class="icons" href="https://open.spotify.com/user/n36np1sylc2t0mbzjzfpgpns7?si=55872cd3ef90444e"
+                    target="blank">
+                    <ion-icon name="musical-notes-outline"></ion-icon>
+                </a>
+                <!--https://mail.google.com/mail/u/0/?fs=1&to=gabriel.haberlach@gmail.com&tf=cm-->
+                <a class="icons" href="mailto:gabriel.haberlach@gmail.com" target="blank">
+                    <ion-icon name="mail-outline"></ion-icon>
+                </a>
+            </div>
+
+            <!--Social Media Links Ende-->
+
         </div>
-        <div id="Console" class="tabcontent">
-            <p>
-                <span class="ueberschrift">About Me</span>
-                <br><span class="text">Hallo, ich bin Gabriel. Ich bin ein Hobby Entwickler aus
-                    Deutschland. Ich arbeite überwiegend mit Java und seit 
-                    kurzem auch C++. Außerdem habe ich vor kurzem angefangen etwas
-                    über Datenbanken zu lernen und habe dafür ein kleines Projekt
-                    mit Spring Boot gemacht.
-                </span>
-            </p>
-            <p>
-                <span class="ueberschrift">Projekte</span>
-                <span class="text">
-                    <br>Alle meine Projekte sind
-                    <a id="link" href="https://github.com/gabriel-java-github" target="blank">hier</a> auffindbar.
-                    Bisher habe ich Spiele mit C#, eine Seite mit Datenbank dahinter, verschiedene Anwendungen
-                    mit Java Swing/AWT, mehrere Konsolenanwendungen, eine 3D Game Enginge mit 
-                    LWJGL 2 und ein 2D Spiel mit Java AWT/Swing programmiert, sowie zwei Websiten erstellt.
-                </span>
-            </p>
-        </div>
+
     </div>
-    <footer>
-        <div class="social-profiles">
-            <a class="icons" href="https://github.com/gabriel-java-github" target="blank">
-                <ion-icon name="logo-github"></ion-icon>
-            </a>
-            <a class="icons" href="https://open.spotify.com/user/n36np1sylc2t0mbzjzfpgpns7?si=55872cd3ef90444e"
-                target="blank">
-                <ion-icon name="musical-notes-outline"></ion-icon>
-            </a>
-            <!--https://mail.google.com/mail/u/0/?fs=1&to=gabriel.haberlach@gmail.com&tf=cm-->
-            <a class="icons" href="mailto:gabriel.haberlach@gmail.com" target="blank">
-                <ion-icon name="mail-outline"></ion-icon>
-            </a>
-        </div>
-    </footer>
+
 </body>
 
 </html>
