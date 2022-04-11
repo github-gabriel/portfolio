@@ -59,7 +59,7 @@ body {
     scrollbar-width: none;
     /* for Firefox */
     overflow-y: hidden;
-}
+}   
 
 /* Tabs */
 
@@ -136,6 +136,7 @@ pre {
     /* position: absolute; */
     /* bottom: 8%; */
     display: inline-flex;
+    width: 160px;
     height: 40px;
     background-color: rgb(44, 156, 0);
     margin-left: 1.5%;
@@ -172,7 +173,7 @@ pre {
 }
 
 .button__icon {
-    width: 30px;
+    width: 34px;
     font-size: 5em;
     background: rgba(0, 0, 0, 0.08);
 }
