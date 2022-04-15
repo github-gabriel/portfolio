@@ -4,12 +4,23 @@
     }
 }
 
+@media (max-height: 600px) {
+    .wrapper{
+        height: 70%;
+    }
+}
+
 /* body fix + reset */
 body {
     width: 100vw;
     height: 100vh;
     margin: 0;
     padding: 0;
+    /*background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);*/
+    /*background-image: linear-gradient(to right bottom, #002dff, #0083ff, #00b4ff, #00ddfe, #00ffdd);*/
+    /*background-image: linear-gradient(to right bottom, #1d1d1d, #3d3d3d, #606060, #868686, #aeaeae);*/
+    background-image: linear-gradient(to right bottom, #007aff, #6872ff, #a063ff, #d24aff, #ff00f4);
+    background-attachment: fixed;
 }
 
 /* Portfolio Header */
@@ -48,18 +59,6 @@ body {
     text-align: center;
     width: 750px;
 }
-
-body {
-    /*background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);*/
-    /*background-image: linear-gradient(to right bottom, #002dff, #0083ff, #00b4ff, #00ddfe, #00ffdd);*/
-    /*background-image: linear-gradient(to right bottom, #1d1d1d, #3d3d3d, #606060, #868686, #aeaeae);*/
-    background-image: linear-gradient(to right bottom, #007aff, #6872ff, #a063ff, #d24aff, #ff00f4);
-    -ms-overflow-style: none;
-    /* for Internet Explorer, Edge */
-    scrollbar-width: none;
-    /* for Firefox */
-    overflow-y: hidden;
-}   
 
 /* Tabs */
 
