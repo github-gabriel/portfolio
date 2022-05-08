@@ -37,10 +37,11 @@ body {
 #portfolioUntertitel {
     display: flex;
     justify-content: center;
-    font-family: 'Monospace';
+    font-family: Consolas, monospace;
     align-self: center;
-    font-size: 28px;
-    margin-bottom: 35px;
+    margin-bottom: 50px;
+    font-size: 30px;
+    margin-bottom: 75px;
 }
 
 /* Container */
@@ -74,7 +75,7 @@ body {
 .tab button {
     font-weight: 700;
     font-size: 26px;
-    font-family: 'Monospace';
+    font-family: Consolas, monospace;
     float: left;
     border: none;
     outline: none;
@@ -111,7 +112,7 @@ pre {
     border: 3px solid #1C1B1B;
     border-bottom-right-radius: 25px;
     border-bottom-left-radius: 25px;
-    font-family: 'Monospace';
+    font-family: Consolas, monospace;
     text-align: left;
     padding: 6px 12px;
     border-top: none;
